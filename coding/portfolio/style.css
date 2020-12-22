@@ -1,0 +1,106 @@
+/*  css- Cascading Style Sheets
+It is used for separate styling for pages.
+NOTES:
+. means class selector
+* means selection of entire body/page, it is known as wild card operator. 
+
+*/
+
+/* *{
+    border:solid
+} */
+
+body{
+    background-color:lightgray;
+    animation-name: example;
+    animation-duration: 8s;
+}
+
+@keyframes example{
+    from{ background-color: peachpuff;}
+    to{background-color: lightgrey;}
+}
+
+.header{
+color:peachpuff;
+background-color: rgb(105, 44, 2);
+padding:20px;
+text-align: center;
+
+}
+
+.header2{
+color:cyan;
+background-color: rgb(8, 40, 133);
+padding:20px;
+text-align: center;
+}
+
+a:link{
+color:lightgreen
+}
+
+a:visited{
+color:white
+}
+
+
+.grid{
+    display :flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    margin: 80px; 
+    
+}
+.footer{
+    display :flex;
+    justify-content:flex-end ;
+    color:rgb(3, 97, 97);
+background-color: rgb(8, 40, 133);
+
+}
+.item{
+  margin:25px; 
+  position : relative;
+  
+}
+.item p{
+/* position: absolute; */
+/* top: 50%;
+left: 50%; */
+opacity: 0.7;
+/* transform: translate(-50%,-50%); */
+}
+.item:hover p{
+    opacity: 1;
+}
+
+a img{
+    border-radius: 50px; 
+    border: solid 7px;
+    border-color: rgb(4, 4, 122);
+}
+a:hover img {
+   transform:scale(1.2) 
+}
+p{
+text-align:center;
+color:cyan;
+background-color: rgb(8, 40, 133);
+padding:15px;
+border-radius: 25px; 
+}
+
+
+
+
+h4{
+    color:black;
+    justify-content:space-around;
+    margin-left:600px;
+    margin-top:300px
+}
+
+h4:hover{
+    transform: scale(1.5,1.5);
+}
